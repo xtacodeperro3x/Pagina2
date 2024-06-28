@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+
+}
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{font-size: 1.25em;}
+
+.color-acento{
+    color: #c6a828;
+}
+
+
+.formulario{
+    flex-direction:column;
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+}
+button{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 7px 9px;
+    border-radius: 9px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: #c6a828;
+}
+button:hover{
+    transition: 0.3s;
+    background-color: #006a76;
+
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color: #f5f5f5;
+    color: #c6a828;
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0px;
+    font-size: 30px;
+}
+
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight:bold ;
+    color: black;
+}
+header a:hover{
+    color: #2098d8;
+}
+#hero{
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("imagenes/Bobina.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+#hero h1{
+    color: rgb(245, 245, 245);
+}
+#somos-CursosTG{
+    height: 450px;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+#somos-CursosTG .container{
+    text-align: center;
+
+    padding: 200px 12 px;
+}
+
+#nuestros-cursos{
+    background-color: #006a76;
+    color: rgb(235, 235, 235);
+    text-align: center;
+}
+
+#nuestros-cursos .container{
+    padding: 100px 12px;
+}
+#nuestros-cursos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+
+#nuestros-cursos .carta{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+#nuestros-cursos .carta:hover{
+    transition: 0.2s;
+    padding: 60px;
+}
+.carta:first-child{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("imagenes/calculadora.jpg");
+}
+
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+footer{
+    background-color: rgb(236, 236, 236);
+
+}
+footer p{
+    margin: 0;
+    color: rgb(31, 31, 31);
+}
+footer .container{
+    text-align: center;
+    height: 150px;
+}
+
+
+
+#somos_CursosTG .img-container{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5),url(imagenes/estudiante.jpeg));
+    background-size: cover;
+    background-position: center center ;
+    height: 500px;
+    width: 400px;
+}
+
+@media(min-width:720px)
+{
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 3px;
+    }
+    .formulario{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #caracteristicas .container{
+        text-align: center;
+        padding: 250px 12px;
+    }
+    #caracteristicas li{
+        font-size: 6vh;
+        margin: 16px 0px;
+        font-weight: bold;
+    }
+
+}
